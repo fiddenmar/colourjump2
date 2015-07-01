@@ -31,5 +31,5 @@ class Reg
     public static var boardCreating:Bool = false;
     public static var musicOn:Bool = false;
     public static var musicLoaded:Bool = false;
-    public static var soundExtension:String = "ogg";
+    public static var soundExtension:String = ".ogg";
 }

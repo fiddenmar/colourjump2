@@ -2,7 +2,7 @@
 <project>
 	<!------------------------------APPLICATION SETTINGS---------------------------->
 	
-	<app title="colourjump2" file="colourjump2" main="Main" version="0.0.1" company="HaxeFlixel" />
+	<app title="colourjump2" file="colourjump2" main="Main" version="0.0.1" company="fiddenmar" />
 	
 	<!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file
 	<!--or you can set the actual size of your file manually at "FlxPreloaderBase-onUpdate-bytesTotal"!-->
@@ -17,7 +17,7 @@
 	<window width="800" height="500" fps="30" hardware="true" vsync="true" orientation="landscape" background="#000000"/>
 	
 	<!--Web-specific-->
-	<window if="web" />
+	<window if="web" fullscreen="false" resizable="true" />
 	
 	<!--Desktop-specific-->
 	<window if="desktop" fullscreen="false" resizable="true" />
