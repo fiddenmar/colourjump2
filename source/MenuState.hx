@@ -101,6 +101,21 @@ class MenuState extends FlxState
 		#if desktop
 			FlxG.mouse.visible = false;
 		#end
+		if (!Reg.musicLoaded)
+		{
+			FlxG.sound.playMusic("assets/music/bensound-november"+Reg.soundExtension, 1, true);
+			Reg.musicLoaded = true;
+			Reg.musicOn = true;
+		}
+		if (Reg.musicOn)
+		{
+			FlxG.sound.resume();
+		}
+		else
+		{
+			FlxG.sound.pause();
+		}
+
 		createBackground();
 		fillInOptionStrings();
 		createOptions();
@@ -127,12 +142,10 @@ class MenuState extends FlxState
 			if (FlxG.keys.justPressed.UP)
 			{
 				optionSelected = (optionSelected + numberOfOptions - 1) % numberOfOptions;
-				//FlxG.sound.play("assets/sounds/menu" + Reg.SoundExtension, 1, false);
 			}
 			if (FlxG.keys.justPressed.DOWN)
 			{
 				optionSelected = (optionSelected + numberOfOptions + 1) % numberOfOptions;
-				//FlxG.sound.play("assets/sounds/menu" + Reg.SoundExtension, 1, false);
 			}
 
 			if (FlxG.keys.anyJustPressed(["SPACE", "ENTER", "C"]))
@@ -142,7 +155,16 @@ class MenuState extends FlxState
 				case 0:
 					FlxG.cameras.fade(FlxColor.WHITE, 1, false, startGame);
 				case 1:
-					
+					if (!Reg.musicOn)
+					{
+						FlxG.sound.resume();
+						Reg.musicOn = true;
+					}
+					else
+					{
+						FlxG.sound.pause();
+						Reg.musicOn = false;
+					}
 				case 2:
 					FlxG.openURL("http://github.com/fiddenmar/colourjump2");
 				case 3:
@@ -157,12 +179,10 @@ class MenuState extends FlxState
 			    	if (touch.screenY < FlxG.height * 3 / 8)
 			    	{
 			    		optionSelected = (optionSelected + numberOfOptions - 1) % numberOfOptions;
-			    		//FlxG.sound.play("assets/sounds/menu" + Reg.SoundExtension, 1, false);
 			    	}
 			    	else if (touch.screenY > FlxG.height * 5 / 8)
 			    	{
 			    		optionSelected = (optionSelected + numberOfOptions + 1) % numberOfOptions;
-			    		//FlxG.sound.play("assets/sounds/menu" + Reg.SoundExtension, 1, false);
 			    	}
 			    	else
 			    	{
@@ -171,7 +191,16 @@ class MenuState extends FlxState
 						case 0:
 							FlxG.cameras.fade(FlxColor.WHITE, 1, false, startGame);
 						case 1:
-							
+							if (!Reg.musicOn)
+							{
+								FlxG.sound.resume();
+								Reg.musicOn = true;
+							}
+							else
+							{
+								FlxG.sound.pause();
+								Reg.musicOn = false;
+							}
 						case 2:
 							FlxG.openURL("http://github.com/fiddenmar/colourjump2");
 						case 3:

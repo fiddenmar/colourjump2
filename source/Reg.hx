@@ -18,6 +18,7 @@ package;
 
 
 import flixel.FlxSprite;
+import flixel.system.FlxSound;
 
 class Reg
 {
@@ -28,4 +29,7 @@ class Reg
     public static var boardImages : Array<FlxSprite> = null;
     public static var gameOver: Bool = false;
     public static var boardCreating:Bool = false;
+    public static var musicOn:Bool = false;
+    public static var musicLoaded:Bool = false;
+    public static var soundExtension:String = "ogg";
 }

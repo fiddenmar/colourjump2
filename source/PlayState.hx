@@ -214,6 +214,15 @@ class PlayState extends FlxState
 
 		spawnTimer = new FlxTimer(worldParams.boardSpawnTime, addBoard, 0);
 
+		if (Reg.musicOn)
+		{
+			FlxG.sound.resume();
+		}
+		else
+		{
+			FlxG.sound.pause();
+		}
+
 		super.create();
 	}
 	
