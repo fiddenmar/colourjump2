@@ -1,3 +1,4 @@
 export
-colourjump2.sublime-project
-colourjump2.sublime-workspace
+assets
+*.keystore
+ProjectPrivate.xml

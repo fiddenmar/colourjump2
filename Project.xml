@@ -30,6 +30,7 @@
 	<set name="BUILD_DIR" value="export" />
 	<classpath name="source" />
 	<assets path="assets" />
+	<template path="AndroidManifest.xml" rename="AndroidManifest.xml" if="android"/>
 	
 	<!--------------------------------LIBRARIES------------------------------------->
 
@@ -79,4 +80,5 @@
 	<!--------------------------------CUSTOM---------------------------------------->
 	
 	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
+	<icon path="assets/icons/icon.svg" />
 </project>
