@@ -14,7 +14,7 @@
    id="svg2985"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="icon.svg">
+   sodipodi:docname="Новый документ 2">
   <defs
      id="defs2987" />
   <sodipodi:namedview
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.9497475"
-     inkscape:cx="-73.689758"
-     inkscape:cy="30.814607"
+     inkscape:zoom="7"
+     inkscape:cx="-6.2857143"
+     inkscape:cy="24"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -53,17 +53,12 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer">
     <rect
-       style="fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.08565593px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="rect2993"
-       width="44.51189"
-       height="44.511894"
-       x="1.8996598"
-       y="1.8996598"
+       width="41"
+       height="41"
+       x="3.7142856"
+       y="4.2857141"
        ry="0" />
-    <path
-       style="fill:#ffffff;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 18.313554,13.816141 25,9.107143 0.03571,3.25 -25.071429,9.035715 0.07143,-3.571429 20.071428,-7.071429 -20.178571,-7.25 z"
-       id="path2987"
-       inkscape:connector-curvature="0" />
   </g>
 </svg>
